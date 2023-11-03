@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: Val-lowtech/test-hugo-lowtech
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "post"
+    label: "Post"
+    folder: "content/posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
